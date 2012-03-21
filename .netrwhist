@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/juraseg'
+let g:netrw_dirhist_2='/home/juraseg/storage/src/inovica/scrapy/products_comparator/resources/csv'
+let g:netrw_dirhist_3='/home/juraseg/storage/src/OpenSource/tomdroid/src/org/tomdroid'
+let g:netrw_dirhist_4='/home/juraseg/.i3'
+let g:netrw_dirhist_5='/home/juraseg/storage/src/PT/v2e_1.0'
+let g:netrw_dirhist_6='/home/juraseg/.i3'
+let g:netrw_dirhist_7='/home/juraseg/storage/src/inovica/product-spiders'
+let g:netrw_dirhist_8='/home/juraseg/storage/src/inovica/product-spiders/.scrapy/.scrapy/scrapyd/logs/default/richersounds.com'
+let g:netrw_dirhist_9='/home/juraseg/.i3'
