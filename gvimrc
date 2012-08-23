@@ -1,6 +1,5 @@
 colorscheme autumn
-set cursorline
-set gfn=Ubuntu\ Mono\ 11
+set gfn=Ubuntu\ Mono\ 12
 set lines=51
 set columns=178
 

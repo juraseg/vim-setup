@@ -74,7 +74,8 @@ set softtabstop=4
 set tabstop=4
 
 " Формат строки состояния
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [ENCODING=%{&encoding}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2b]\ [POS=%04l,%0.4v][%p%%]\ [LEN=%L]
+"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [ENCODING=%{&encoding}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2b]\ [POS=%04l,%0.4v][%p%%]\ [LEN=%L]
+set statusline=%F%m%r%h%w\ [ENC=%{&encoding}]\ [POS=%04l,%0.4v][%p%%]\ [LEN=%L]
 set laststatus=2
 
 " Включаем "умные" отспупы ( например, автоотступ после {)
@@ -161,21 +162,15 @@ map <F8> :bd<cr>
 vmap <F8> <esc>:bd<cr>
 imap <F8> <esc>:bd<cr>
 
-" F9 - показать/скрыть панель проектов
-nmap <silent> <F9> <Plug>ToggleProject
-
 " F10 - показать окно NERDTree
-map <F10> :NERDTreeToggle<cr>
-vmap <F10> <esc>:NERDTreeToggle<cr>i
-imap <F10> <esc>:NERDTreeToggle<cr>i
+map <F9> :NERDTreeToggle<cr>
+vmap <F9> <esc>:NERDTreeToggle<cr>i
+imap <F9> <esc>:NERDTreeToggle<cr>i
 
 " F11 - показать окно Taglist
-map <F11> :TagbarToggle<cr>
-vmap <F11> <esc>:TagbarToggle<cr>
-imap <F11> <esc>:TagbarToggle<cr>
-"map <F11> :TlistToggle<cr>
-"vmap <F11> <esc>:TlistToggle<cr>
-"imap <F11> <esc>:TlistToggle<cr>
+map <F11> :TlistToggle<cr>
+vmap <F11> <esc>:TlistToggle<cr>
+imap <F11> <esc>:TlistToggle<cr>
 
 " F12 - обозреватель файлов
 map <F12> :Ex<cr>
@@ -239,7 +234,10 @@ if has("autocmd")
 endif
 
 set t_Co=256
-colorscheme wombat256
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+"colorscheme wombat256
 
 " Настройки для mini buffer explorer
 "let g:miniBufExplMapWindowNavVim = 1 
@@ -249,7 +247,7 @@ colorscheme wombat256
 
 " Настройки для NERDTree
 let NERDTreeChDirMode = 1
-let NERDTreeWinPos = "right"
+let NERDTreeWinPos = "left"
 
 " Настройки diff
 set diffopt=filler,vertical
@@ -262,12 +260,6 @@ let Tlist_Show_One_File = 0
 let Tlist_Auto_Highlight_Tag = 1
 let Tlist_WinWidth = 36
 let g:Tlist_Show_One_File = 1
-let Tlist_Use_Right_Window = 0
-
-" Настройки Project Plugin
-let g:proj_window_width = 36
-let g:proj_window_increment = 50
-let g:proj_flags = "imstT"
 
 " Настройки SuperTab
 let g:SuperTabDefaultCompletionType = "context"
