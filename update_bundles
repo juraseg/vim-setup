@@ -9,7 +9,8 @@ git_bundles = [
   "git://github.com/vim-scripts/taglist.vim.git",
   "git://github.com/vim-scripts/autumn.vim.git",
   "git://github.com/altercation/vim-colors-solarized.git",
-  "git://github.com/Raimondi/delimitMate.git"
+  "git://github.com/Raimondi/delimitMate.git",
+  "git://github.com/ervandew/supertab.git"
 ]
 
 vim_org_scripts = [
