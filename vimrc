@@ -89,6 +89,17 @@ set fo+=cr
 " Опции сесссий
 set sessionoptions=curdir,buffers,tabpages
 
+"-------------------------
+" Vim-Plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'dylanaraps/wal.vim'
+Plug 'vim-scripts/autumn.vim'
+
+call plug#end()
+"-------------------------
 
 "-------------------------
 " Горячие клавишы
@@ -234,10 +245,11 @@ if has("autocmd")
 endif
 
 set t_Co=256
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 "colorscheme wombat256
+colorscheme wal
 
 " Настройки для mini buffer explorer
 "let g:miniBufExplMapWindowNavVim = 1 

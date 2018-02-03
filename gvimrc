@@ -1,5 +1,5 @@
 colorscheme autumn
-set gfn=Ubuntu\ Mono\ 12
+set gfn=Iosevka\ 12
 set lines=51
 set columns=178
 
