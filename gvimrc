@@ -1,4 +1,5 @@
-colorscheme autumn
+#colorscheme autumn
+colorscheme desert
 set gfn=Iosevka\ 12
 set lines=51
 set columns=178
