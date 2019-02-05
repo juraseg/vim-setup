@@ -95,7 +95,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'dylanaraps/wal.vim'
 Plug 'vim-scripts/autumn.vim'
 Plug 'PotatoesMaster/i3-vim-syntax'
 
